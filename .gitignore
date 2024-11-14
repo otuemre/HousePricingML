@@ -1,8 +1,8 @@
 # Ignore data files
 /data/*
-!data/README.md
+!data/README.md  # Allow README to explain data source
 
-# Ignore notebooks checkpoints
+# Ignore Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
 # Ignore Python bytecode
@@ -13,17 +13,34 @@ __pycache__/
 venv/
 env/
 
-# Ignore Jupyter Notebook settings
-*.ipynb
-
 # Ignore system files
 .DS_Store
 Thumbs.db
 
-# Ignore model files
+# Ignore model files and logs
 /models/*
-!models/README.md
-
-# Ignore log files
-logs/
+!models/README.md  # Keep README to describe model usage
+/logs/
 *.log
+
+# Ignore IDE-specific files
+# JetBrains (e.g., PyCharm)
+.idea/
+*.iml
+
+# VSCode
+.vscode/
+
+# Ignore environment files
+.env
+*.env
+
+# Ignore compiled libraries
+*.so
+*.dylib
+*.dll
+
+# Ignore temporary files and OS-specific clutter
+*.bak
+*.swp
+*.tmp
