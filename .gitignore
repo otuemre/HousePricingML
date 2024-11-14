@@ -1,0 +1,29 @@
+# Ignore data files
+/data/*
+!data/README.md
+
+# Ignore notebooks checkpoints
+.ipynb_checkpoints/
+
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore Jupyter Notebook settings
+*.ipynb
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore model files
+/models/*
+!models/README.md
+
+# Ignore log files
+logs/
+*.log
